@@ -95,7 +95,7 @@ body {
 .site-nav .link.current {
     color: var(--accent-color);
 } 
-/* ---------------contacts--------------- */
+/* -----------------contacts---------------- */
 .contacts .contact {
     color: var(--paragraf-color);
     font-weight: 500;
@@ -107,8 +107,18 @@ body {
 .contact:focus {
     color: var(--accent-color);
 }
-
-/* ---------------hero--------------- */
+/* ---------------contacts-icon---------------*/
+.contact-soc{
+    width: 16px;
+    height: 10px;
+    color: var(--paragraf-color);
+    justify-content: center;
+}
+/* .contact-soc:hover,
+.contact-soc:focus {
+    color: var(--accent-color);
+} */
+/* --------------------hero------------------- */
 .hero {
     text-align: center;
     padding: 200px 200px;
@@ -263,10 +273,41 @@ body {
     fill: #AFB1B8;
 }
 .team-soc-item:hover,
-.team-soc-item:focus {
+.team-soc-item:focus{
     background-color: var(--accent-color);
-    color: var(--background-button);
+    border-radius: 50%;
 }
+.team-soc-item:hover .team-soc-icon,
+.team-soc-item:focus .team-soc-icon{
+    fill: var(--studio-title);
+}
+
+.test-list{
+    display: flex;
+    gap: 30px;
+}
+.test-item{
+    width: calc((100% - 150px) / 6);
+    height: 92px;
+}
+.test-link {
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 5px;
+    display: flex;align-items: center;
+    justify-content: center;
+}
+.test-item:hover,
+.test-item:focus {
+    border-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.test-item:hover .test-icon,
+.test-item:focus .test-icon {
+    fill: var(--studio-title);
+}
+
 /* --------------------------end---------------------------- */
 .section-team {
     margin-bottom: 10px;
@@ -424,4 +465,43 @@ body {
 .site-nav.items .item:hover,
 .site-nav.items .item:focus {
     color: var(--accent-color);
+}
+/* -----------footer-soc-icon-------------- */
+.soc-title{
+    color: var(--studio-title);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.soc-title{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.footer-soc-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    gap: 10px;
+}
+.footer-soc-item{
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-icon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+            /* background: rgb(96, 25, 25); */
+}
+
+.footer-soc-icon{
+
 }
